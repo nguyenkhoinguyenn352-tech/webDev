@@ -1,0 +1,13 @@
+let dogs = [];
+
+for (let i = 0; i < 6; i++) {
+  dogs.push(prompt("Enter dog name " + (i + 1)));
+}
+
+dogs.sort().reverse();
+
+document.write("<h3>Dog Names</h3><ul>");
+for (let dog of dogs) {
+  document.write("<li>" + dog + "</li>");
+}
+document.write("</ul>");
