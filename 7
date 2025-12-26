@@ -1,0 +1,15 @@
+function rollDiceSides(sides) {
+  return Math.floor(Math.random() * sides) + 1;
+}
+
+let max = Number(prompt("Enter max dice value:"));
+
+document.write("<h3>Dice Rolls</h3><ul>");
+let roll;
+
+do {
+  roll = rollDiceSides(max);
+  document.write("<li>" + roll + "</li>");
+} while (roll !== max);
+
+document.write("</ul>");
