@@ -1,0 +1,14 @@
+let arr = [];
+let x;
+
+while (true) {
+  x = Number(prompt("Enter number (0 to stop):"));
+  if (x === 0) break;
+  arr.push(x);
+}
+
+arr.sort((a, b) => b - a);
+
+for (let num of arr) {
+  console.log(num);
+}
