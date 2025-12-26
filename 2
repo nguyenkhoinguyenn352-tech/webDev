@@ -1,0 +1,14 @@
+let n = Number(prompt("Number of participants:"));
+let names = [];
+
+for (let i = 0; i < n; i++) {
+  names.push(prompt("Enter name " + (i + 1)));
+}
+
+names.sort();
+
+document.write("<h3>Participants</h3><ol>");
+for (let name of names) {
+  document.write("<li>" + name + "</li>");
+}
+document.write("</ol>");
